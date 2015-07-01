@@ -2,109 +2,112 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ali Sayed</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
+	<script>
+		var html = document.documentElement;
+		html.className = html.className.replace("no-js", "js");
+	</script>
 </head>
 <body>
 	<div class="page-wrapper">
-		<header class="cl">
-			<div class="photo-banner"></div>
-			<div class="intro" id="beginning">
+		<header class="layout-header cl">
+			<div class="layout-header__big"></div>
+			<div class="menu-inner">
+				<nav>
+					<ul class="nav">
+						<li class="nav__item"><a class="nav__link link" href="#beginning">Beginning</a></li>
+						<li class="nav__item"><a class="nav__link link" href="#services">Services</a></li>
+						<li class="nav__item"><a class="nav__link link" href="#about">About</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="layout-header__small" id="beginning">
 				<div class="menu">
-					<a class="menu__toggle link" href="#" title="menu">
+					<a class="menu__toggle js-menu__toggle link" href="#" title="menu">
 						toggle menu
 						<span class="menu__toggle-icon"></span>
 					</a>
-					<div class="menu__inner">
-						<nav>
-							<ul class="nav">
-								<li class="nav__item"><a class="nav__link link" href="#beginning">Beginning</a></li>
-								<li class="nav__item"><a class="nav__link link" href="#services">Services</a></li>
-								<li class="nav__item"><a class="nav__link link" href="#about">About</a></li>
-							</ul>
-						</nav>
-					</div>
 				</div>
-				<h1 class="intro__caption">
+				<h1 class="layout-header__caption">
 					Ali Sayed’s<br>
-					<span class="intro__caption_font_bold">Web Designing</span><br>
-					<span class="intro__caption_font_regular">Project</span>
+					<strong class="layout__caption--bold">Web Designing</strong><br>
+					<span class="layout__caption--regular">Project</span>
 				</h1>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
 				<p>quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dol.</p>
 			</div>
 		</header>
-		<main class="cl">
-			<section class="services" id="services">
-				<ul class="services__list">
-					<li class="services__item">
-						<h2 class="services__caption">
+		<main class="layout-content cl">
+			<div class="layout-content__small" id="services">
+				<ul class="layout-content__list">
+					<li class="layout-content__item">
+						<h2 class="layout__caption layout-content__caption">
 							Drawing 
-							<span class="services__caption_font_bold">Scketch</span>
+							<strong class="layout__caption--bold">Scketch</strong>
 						</h2>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
 					</li>
-					<li class="services__item">
-						<h2 class="services__caption">
+					<li class="layout-content__item">
+						<h2 class="layout__caption layout-content__caption">
 							Making 
-							<span class="services__caption_font_bold">Design</span>
+							<strong class="layout__caption--bold">Design</strong>
 						</h2>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
 					</li>
-					<li class="services__item">
-						<h2 class="services__caption">
+					<li class="layout-content__item">
+						<h2 class="layout__caption layout-content__caption">
 							Developing 
-							<span class="services__caption_font_bold">Product</span>
+							<strong class="layout__caption--bold">Product</strong>
 						</h2>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
 					</li>
 				</ul>
-			</section>
-			<section class="section-info starting">
-				<h2 class="section__caption section__caption_color_dark">
-					Best 
-					<span class="section__caption_font_bold">Starting</span>
-				</h2>
-				<p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
-				<a class="btn btn_color_dark" href="#">View Our History</a>
-			</section>
-			<section class="section-info dummy">
-				<h2 class="section__caption">
-					Verified 
-					<span class="section__caption_font_bold">Dummy</span>
-				</h2>
-				<p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
-				<a class="btn" href="#">Go To The Page</a>
-			</section>
-		</main>
-		<footer class="cl">
-			<div class="about" id="about">
-				<p class="about__text block-shift-left">This Webpage Is <span class="about__text_font_bold">Designed By</span></p>
-				<img class="logo" src="img/logo.png" width="90" height="90" alt="Ali Sayed">
-				<p class="about__text_size_small">Ali Sayed</p>
-				<p class="about__text_size_medium">Graphic Designer</p>
 			</div>
-			<div class="feedback">
-				<p class="feedback__text block-shift-right">Say <span class="feedback__text_font_bold">‘Hello’</span></p>
+			<div class="layout-content__big">
+				<div class="layout-content__section layout-content__section1">
+					<h2 class="layout__caption layout-content__caption layout__caption--dark">
+						Best 
+						<strong class="layout__caption--bold">Starting</strong>
+					</h2>
+					<p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+					<a class="btn btn--dark" href="#">View Our History</a>
+				</div>
+				<div class="layout-content__section layout-content__section2">
+					<h2 class="layout__caption layout-content__caption">
+						Verified 
+						<strong class="layout__caption--bold">Dummy</strong>
+					</h2>
+					<p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+					<a class="btn" href="#">Go To The Page</a>
+				</div>
+			</div>
+		</main>
+		<footer class="layout-footer cl">
+			<div class="layout-footer__small" id="about">
+				<p class="layout__caption block-shift-left">This Webpage Is <strong class="layout__caption--bold">Designed By</strong></p>
+				<img class="logo" src="img/logo.png" width="90" height="90" alt="Ali Sayed">
+				<p class="layout__caption layout__caption--bold layout__caption--small">Ali Sayed</p>
+				<p class="layout-footer__text">Graphic Designer</p>
+			</div>
+			<div class="layout-footer__big">
+				<p class="layout__caption block-shift-right">Say <strong class="layout__caption--bold">‘Hello’</strong></p>
 				<form class="form" action="/" method="post">
 					<input class="form__input" type="text" name="name" placeholder="Your Name">
 					<input class="form__input" type="email" name="email" placeholder="Your Email">
 					<textarea id="message" class="form__textarea" name="message" placeholder="Your Message Here..."></textarea>
 					<button class="btn form__btn" type="submit">Send</button>
 				</form>
-				<p class="feedback__text_size_medium">Stay Connnected With Us...</p>
+				<p class="layout-footer__text">Stay Connnected With Us...</p>
 				<a class="social-btn social-btn_net_facebook" href="#">facebook</a>
 				<a class="social-btn social-btn_net_dribbble" href="#">dribbble</a>
 				<a class="social-btn social-btn_net_twitter" href="#">twitter</a>
-				<p class="feedback__text_size_medium">Please Feel Free To Contat With me For Any Kind of Prject.</p>
+				<p class="layout-footer__text">Please Feel Free To Contat With me For Any Kind of Prject.</p>
 			</div>
 		</footer>
 	</div>
-	<script>
-		var html = document.documentElement;
-		html.className = html.className.replace("no-js", "js");
-	</script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
